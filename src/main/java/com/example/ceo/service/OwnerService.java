@@ -14,7 +14,7 @@ import java.util.UUID;
 public class OwnerService {
     private final OwnerRepository ownerRepository;
     public void save(OwnerRequest request){
-        ownerRepository.save(request.toEntity());
+        Owner save = ownerRepository.save(request.toEntity());
     }
     public OwnerResponse getById(UUID ownerId){
         Owner owner = ownerRepository.findById(ownerId)

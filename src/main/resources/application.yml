@@ -1,6 +1,8 @@
 server:
   port: 9001
 spring:
+  application:
+    name: ceo-service
   datasource:
     url: jdbc:mysql://localhost:3306/ceo?serverTimezone=Asia/Seoul
     username: root

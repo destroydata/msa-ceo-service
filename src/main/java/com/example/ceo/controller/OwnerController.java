@@ -22,6 +22,7 @@ public class OwnerController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void postOwner(@RequestBody OwnerRequest request){
+
         ownerService.save(request);
     }
 }
