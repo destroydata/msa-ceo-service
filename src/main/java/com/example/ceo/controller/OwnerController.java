@@ -19,10 +19,10 @@ public class OwnerController {
     public OwnerResponse getById(@PathVariable UUID ownerId){
         return ownerService.getById(ownerId);
     }
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public void postOwner(@RequestBody OwnerRequest request){
-
-        ownerService.save(request);
-    }
+//    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public void postOwner(@RequestBody OwnerRequest request){
+//
+//        ownerService.save(request);
+//    }
 }
